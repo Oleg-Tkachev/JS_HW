@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework</title>
+  </head>
+  <body>
+    <!--
+Создать переменные positive и negative, в которые пользователь вводит с 
+клавиатуры значения. Нужно попросить пользователя ввести положительное число в 
+переменную positive и отрицательное в переменную negative. 
+Перед тем, как положить значения в данные переменные необходимо их превратить 
+в числа.
+После ввода значений, необходимо вывести "Все значения верные.", если 
+пользователь действительно ввел корректные значения, которые мы просили его 
+ввести.
+Если же пользователь где-то ввел неверное значение, то необходимо вывести 
+в консоль "Одно или более значений некорректно.".
+-->
+    <script>
+      "use strict";
+      
+      let positive = parseInt(prompt("Введите любое положительное число: "));
+      let negative = parseInt(prompt("Введите любое отрицательное число: "));
+
+      // parseFloat  --> для дробных чисел (но в ТЗ не указано :-) )
+      //console.log(positive,  negative);
+
+
+
+      if (isNaN(positive) || isNaN(negative) || positive <= 0 || negative >= 0) {
+        console.log("Одно или более значений некорректно.");
+      } else {
+        console.log("Все значения верные.");
+      }
+
+      
+    </script>
+  </body>
+</html>
